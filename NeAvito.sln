@@ -19,21 +19,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{078DA6A2
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{1F9466A8-C1FA-415E-BE5C-DCA0E280F923}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeAvito.Application.AppServices", "src\NeAvito\Application\NeAvito.Application.AppServices\NeAvito.Application.AppServices.csproj", "{59B9CC0B-EA95-455C-964C-6635D84CDF88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeAvito.Application.AppServices", "src\NeAvito\Application\NeAvito.Application.AppServices\NeAvito.Application.AppServices.csproj", "{59B9CC0B-EA95-455C-964C-6635D84CDF88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeAvito.Clients", "src\NeAvito\Clients\NeAvito.Clients\NeAvito.Clients.csproj", "{2692A1D3-47C6-4781-8BA1-8BC7A43A4AFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeAvito.Clients", "src\NeAvito\Clients\NeAvito.Clients\NeAvito.Clients.csproj", "{2692A1D3-47C6-4781-8BA1-8BC7A43A4AFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeAvito.Contracts", "src\NeAvito\Contracts\NeAvito.Contracts\NeAvito.Contracts.csproj", "{B5221A15-330E-4043-A6F7-53E78B7FDCC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeAvito.Contracts", "src\NeAvito\Contracts\NeAvito.Contracts\NeAvito.Contracts.csproj", "{B5221A15-330E-4043-A6F7-53E78B7FDCC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeAvito.Domain", "src\NeAvito\Domain\NeAvito.Domain\NeAvito.Domain.csproj", "{A4968F60-502D-4355-83D8-A774710E5DEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeAvito.Domain", "src\NeAvito\Domain\NeAvito.Domain\NeAvito.Domain.csproj", "{A4968F60-502D-4355-83D8-A774710E5DEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeAvito.Infrastructure", "src\NeAvito\Infrastructure\NeAvito.Infrastructure\NeAvito.Infrastructure.csproj", "{0ADDFA72-4AB4-4B2C-B98F-BD32F7093814}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeAvito.Infrastructure", "src\NeAvito\Infrastructure\NeAvito.Infrastructure\NeAvito.Infrastructure.csproj", "{0ADDFA72-4AB4-4B2C-B98F-BD32F7093814}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeAvito.Infrastructure.DataAccess", "src\NeAvito\Infrastructure\NeAvito.Infrastructure.DataAccess\NeAvito.Infrastructure.DataAccess.csproj", "{C4B24E1F-3ED4-49A5-9F68-B43C5FD47507}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeAvito.Infrastructure.DataAccess", "src\NeAvito\Infrastructure\NeAvito.Infrastructure.DataAccess\NeAvito.Infrastructure.DataAccess.csproj", "{C4B24E1F-3ED4-49A5-9F68-B43C5FD47507}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeAvito.Infrastructure.ComponentRegistrar", "src\NeAvito\Infrastructure\NeAvito.Infrastructure.ComponentRegistrar\NeAvito.Infrastructure.ComponentRegistrar.csproj", "{A4A5B3B4-B984-4CC1-88CD-E8039F6E1F54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeAvito.Infrastructure.ComponentRegistrar", "src\NeAvito\Infrastructure\NeAvito.Infrastructure.ComponentRegistrar\NeAvito.Infrastructure.ComponentRegistrar.csproj", "{A4A5B3B4-B984-4CC1-88CD-E8039F6E1F54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeAvito.Hosts.Api", "src\NeAvito\Hosts\NeAvito.Hosts.Api\NeAvito.Hosts.Api.csproj", "{B8002C24-2415-499D-BAF3-A25FDFBCE908}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeAvito.Hosts.Api", "src\NeAvito\Hosts\NeAvito.Hosts.Api\NeAvito.Hosts.Api.csproj", "{428AB9C6-6C5A-4320-86FD-9ED0743B0131}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,10 +69,10 @@ Global
 		{A4A5B3B4-B984-4CC1-88CD-E8039F6E1F54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4A5B3B4-B984-4CC1-88CD-E8039F6E1F54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4A5B3B4-B984-4CC1-88CD-E8039F6E1F54}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B8002C24-2415-499D-BAF3-A25FDFBCE908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8002C24-2415-499D-BAF3-A25FDFBCE908}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B8002C24-2415-499D-BAF3-A25FDFBCE908}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B8002C24-2415-499D-BAF3-A25FDFBCE908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{428AB9C6-6C5A-4320-86FD-9ED0743B0131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{428AB9C6-6C5A-4320-86FD-9ED0743B0131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{428AB9C6-6C5A-4320-86FD-9ED0743B0131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{428AB9C6-6C5A-4320-86FD-9ED0743B0131}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,7 +92,7 @@ Global
 		{0ADDFA72-4AB4-4B2C-B98F-BD32F7093814} = {1F9466A8-C1FA-415E-BE5C-DCA0E280F923}
 		{C4B24E1F-3ED4-49A5-9F68-B43C5FD47507} = {1F9466A8-C1FA-415E-BE5C-DCA0E280F923}
 		{A4A5B3B4-B984-4CC1-88CD-E8039F6E1F54} = {1F9466A8-C1FA-415E-BE5C-DCA0E280F923}
-		{B8002C24-2415-499D-BAF3-A25FDFBCE908} = {078DA6A2-4AE0-4AC9-8829-3BDEAD4C91AA}
+		{428AB9C6-6C5A-4320-86FD-9ED0743B0131} = {078DA6A2-4AE0-4AC9-8829-3BDEAD4C91AA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8B253B73-F441-4C34-9272-201C93AAF565}
