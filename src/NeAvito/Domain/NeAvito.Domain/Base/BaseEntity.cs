@@ -1,4 +1,4 @@
-﻿namespace NeAvito.Domain
+﻿namespace NeAvito.Domain.Base
 {
     /// <summary>
     /// Базовая сущность

@@ -1,14 +1,21 @@
-﻿namespace NeAvito.Domain
+﻿using NeAvito.Domain.Base;
+
+namespace NeAvito.Domain.Entities
 {
     /// <summary>
     /// Категория объявления
     /// </summary>
-    public class Category : NamedEntity
+    public class Category : BaseEntity
     {
+        /// <summary>
+        /// Имя
+        /// </summary>
+        public string Name { get; set; }
+
         /// <summary>
         /// Идентификатор родительской категории. Null у корневых
         /// </summary>
-        public Guid? ParentId { get; set;}
+        public Guid? ParentId { get; set; }
 
         /// <summary>
         /// Родительская категория. Null у корневых
@@ -18,6 +25,6 @@
         /// <summary>
         /// Дочерние категории
         /// </summary>
-        public IReadOnlyCollection<Category> Children { get; set;}
+        public IReadOnlyCollection<Category> Children { get; set; }
     }
 }

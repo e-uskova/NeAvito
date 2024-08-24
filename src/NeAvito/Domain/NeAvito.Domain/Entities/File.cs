@@ -1,10 +1,17 @@
-﻿namespace NeAvito.Domain
+﻿using NeAvito.Domain.Base;
+
+namespace NeAvito.Domain.Entities
 {
     /// <summary>
     /// Прикрепляемый файл
     /// </summary>
-    public class File : NamedEntity
+    public class File : BaseEntity
     {
+        /// <summary>
+        /// Имя
+        /// </summary>
+        public string Name { get; set; }
+
         /// <summary>
         /// Контент
         /// </summary>

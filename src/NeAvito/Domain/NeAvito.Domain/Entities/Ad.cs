@@ -1,9 +1,11 @@
-﻿namespace NeAvito.Domain
+﻿using NeAvito.Domain.Base;
+
+namespace NeAvito.Domain.Entities
 {
     /// <summary>
     /// Объявление
     /// </summary>
-    public class Ad : UserEntry
+    public class Ad : BaseEntity
     {
         /// <summary>
         /// Заголовок
@@ -44,5 +46,25 @@
         /// Отзывы
         /// </summary>
         public IReadOnlyCollection<Review> Reviews { get; set; }
+
+        /// <summary>
+        /// Идентификатор автора
+        /// </summary>
+        public Guid AuthorId { get; set; }
+
+        /// <summary>
+        /// Автор
+        /// </summary>
+        public User Author { get; set; }
+
+        /// <summary>
+        /// Время создания
+        /// </summary>
+        public DateTime Created { get; set; }
+
+        /// <summary>
+        /// Время последнего обновления
+        /// </summary>
+        public DateTime Updated { get; set; }
     }
 }

@@ -1,10 +1,17 @@
-﻿namespace NeAvito.Domain
+﻿using NeAvito.Domain.Base;
+
+namespace NeAvito.Domain.Entities
 {
     /// <summary>
     /// Пользователь
     /// </summary>
-    public class User : NamedEntity
+    public class User : BaseEntity
     {
+        /// <summary>
+        /// Имя
+        /// </summary>
+        public string Name { get; set; }
+
         /// <summary>
         /// Адрес электронной почты
         /// </summary>
