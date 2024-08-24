@@ -28,6 +28,11 @@ namespace NeAvito.Domain.Entities
         public string Address { get; set; }
 
         /// <summary>
+        /// Идентификатор категории
+        /// </summary>
+        public Guid CategoryId { get; set; }
+
+        /// <summary>
         /// Категория
         /// </summary>
         public Category Category { get; set; }
