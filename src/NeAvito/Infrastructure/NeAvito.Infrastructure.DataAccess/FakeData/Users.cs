@@ -35,9 +35,22 @@ namespace NeAvito.Infrastructure.DataAccess.FakeData
             },
         };
 
-        public static IEnumerable<User> GetAll() 
+        public static Task<IEnumerable<User>> GetAllASync() 
         { 
-            return _users; 
+            return Task.Run(() => _users.AsEnumerable());
+        }
+
+        public static Task<User?> GetByIdAsync(Guid id)
+        {
+            return Task.Run(() => _users.Where(e => e.Id == id)?.First());
+        }
+
+        public static Task<Guid> AddAsync(User model)
+        {
+            var newUser = model;
+            newUser.Id = Guid.NewGuid();
+            _users.Add(newUser);
+            return Task.Run(() => newUser.Id);
         }
     }
 }

@@ -1,3 +1,7 @@
+using NeAvito.Application.AppServices.User.Repository;
+using NeAvito.Application.AppServices.User.Services;
+using NeAvito.Infrastructure.DataAccess.Repositories;
+
 namespace NeAvito.Hosts.Api
 {
     public class Program
@@ -12,6 +16,9 @@ namespace NeAvito.Hosts.Api
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddTransient<IUserService, UserService>();
+            builder.Services.AddTransient<IUserRepository, UserRepository>();
 
             var app = builder.Build();
 

@@ -10,4 +10,13 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <ProjectReference Include="..\..\Application\NeAvito.Application.AppServices\NeAvito.Application.AppServices.csproj" />
+	  <ProjectReference Include="..\..\Infrastructure\NeAvito.Infrastructure.DataAccess\NeAvito.Infrastructure.DataAccess.csproj" />
+  </ItemGroup>
+
 </Project>
