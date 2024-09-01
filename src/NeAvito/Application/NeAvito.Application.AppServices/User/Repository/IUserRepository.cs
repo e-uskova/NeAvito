@@ -26,7 +26,7 @@ namespace NeAvito.Application.AppServices.User.Repository
         /// Добавление пользователя
         /// </summary>
         /// <param name="userDto">Модель пользователя</param>
-        /// <param name="password">Обфусцированный парольparam>
+        /// <param name="password">Обфусцированный пароль</param>
         /// <param name="cancellationToken">Токен отмены</param>
         /// <returns>Идентификатор добавленного пользователя</returns>
         public Task<Guid> AddAsync(UserDto userDto, string password, CancellationToken cancellationToken);

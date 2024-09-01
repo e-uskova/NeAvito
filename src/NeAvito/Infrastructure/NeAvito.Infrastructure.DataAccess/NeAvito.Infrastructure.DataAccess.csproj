@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Application\NeAvito.Application.AppServices\NeAvito.Application.AppServices.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\NeAvito.Infrastructure\NeAvito.Infrastructure.csproj" />
     <ProjectReference Include="..\..\Domain\NeAvito.Domain\NeAvito.Domain.csproj" />
   </ItemGroup>
 

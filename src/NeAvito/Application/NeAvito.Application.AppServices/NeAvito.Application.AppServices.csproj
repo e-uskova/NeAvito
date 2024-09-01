@@ -7,8 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Category\Repository\" />
-    <Folder Include="Category\Services\" />
     <Folder Include="Review\Repository\" />
     <Folder Include="Review\Services\" />
     <Folder Include="File\Repository\" />

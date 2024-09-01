@@ -1,6 +1,7 @@
-using NeAvito.Application.AppServices.User.Repository;
-using NeAvito.Application.AppServices.User.Services;
-using NeAvito.Infrastructure.DataAccess.Repositories;
+using Microsoft.OpenApi.Models;
+using NeAvito.Contracts.User;
+using NeAvito.Hosts.Api.Controllers;
+using NeAvito.Infrastructure.ComponentRegistrar;
 
 namespace NeAvito.Hosts.Api
 {
@@ -15,10 +16,29 @@ namespace NeAvito.Hosts.Api
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new OpenApiInfo { Title = "NeAvito", Version = "v1" });
 
-            builder.Services.AddTransient<IUserService, UserService>();
-            builder.Services.AddTransient<IUserRepository, UserRepository>();
+                var docTypeMarkers = new[]
+                {
+                    typeof(UserDto),
+                    typeof(UserController),
+                };
+
+                foreach (var marker in docTypeMarkers)
+                {
+                    var xmlFile = $"{marker.Assembly.GetName().Name}.xml";
+                    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+
+                    if (File.Exists(xmlPath))
+                    {
+                        options.IncludeXmlComments(xmlPath);
+                    }
+                }
+            });
+
+            builder.Services.AddServices();
 
             var app = builder.Build();
 

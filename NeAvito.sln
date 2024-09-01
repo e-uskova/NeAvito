@@ -33,7 +33,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeAvito.Infrastructure.Data
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeAvito.Infrastructure.ComponentRegistrar", "src\NeAvito\Infrastructure\NeAvito.Infrastructure.ComponentRegistrar\NeAvito.Infrastructure.ComponentRegistrar.csproj", "{A4A5B3B4-B984-4CC1-88CD-E8039F6E1F54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeAvito.Hosts.Api", "src\NeAvito\Hosts\NeAvito.Hosts.Api\NeAvito.Hosts.Api.csproj", "{428AB9C6-6C5A-4320-86FD-9ED0743B0131}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeAvito.Hosts.Api", "src\NeAvito\Hosts\NeAvito.Hosts.Api\NeAvito.Hosts.Api.csproj", "{428AB9C6-6C5A-4320-86FD-9ED0743B0131}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

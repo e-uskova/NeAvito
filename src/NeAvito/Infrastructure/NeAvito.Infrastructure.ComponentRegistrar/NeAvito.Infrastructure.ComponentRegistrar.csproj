@@ -9,5 +9,10 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
   </ItemGroup>
-
+    
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\NeAvito.Application.AppServices\NeAvito.Application.AppServices.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\NeAvito.Infrastructure.DataAccess\NeAvito.Infrastructure.DataAccess.csproj" />
+  </ItemGroup>
+    
 </Project>

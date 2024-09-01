@@ -25,9 +25,9 @@ namespace NeAvito.Infrastructure.DataAccess.FakeData
             },
         };
 
-        public static IEnumerable<Category> GetAll()
+        public static Task<IEnumerable<Category>> GetAllAsync()
         {
-            return _categories;
+            return Task.Run(() => _categories.AsEnumerable());
         }
     }
 }
