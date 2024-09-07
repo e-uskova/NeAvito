@@ -9,10 +9,6 @@
   <ItemGroup>
     <Folder Include="Review\Repository\" />
     <Folder Include="Review\Services\" />
-    <Folder Include="File\Repository\" />
-    <Folder Include="File\Services\" />
-    <Folder Include="Ad\Repository\" />
-    <Folder Include="Ad\Services\" />
   </ItemGroup>
 
   <ItemGroup>
